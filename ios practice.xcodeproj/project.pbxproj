@@ -12,6 +12,7 @@
 		98C0D8752018366200E4DFA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98C0D8732018366200E4DFA9 /* Main.storyboard */; };
 		98C0D8772018366200E4DFA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98C0D8762018366200E4DFA9 /* Assets.xcassets */; };
 		98C0D87A2018366200E4DFA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98C0D8782018366200E4DFA9 /* LaunchScreen.storyboard */; };
+		98C0D886201838A700E4DFA9 /* CSStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C0D885201838A700E4DFA9 /* CSStepper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		98C0D8762018366200E4DFA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98C0D8792018366200E4DFA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98C0D87B2018366200E4DFA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98C0D885201838A700E4DFA9 /* CSStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSStepper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 		98C0D8822018367A00E4DFA9 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				98C0D8842018387800E4DFA9 /* Views */,
 				98C0D8832018368600E4DFA9 /* ViewControllers */,
 			);
 			path = Sources;
@@ -86,6 +89,14 @@
 				98C0D8712018366200E4DFA9 /* ViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		98C0D8842018387800E4DFA9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				98C0D885201838A700E4DFA9 /* CSStepper.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98C0D886201838A700E4DFA9 /* CSStepper.swift in Sources */,
 				98C0D8722018366200E4DFA9 /* ViewController.swift in Sources */,
 				98C0D8702018366200E4DFA9 /* AppDelegate.swift in Sources */,
 			);
