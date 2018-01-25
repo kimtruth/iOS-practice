@@ -30,6 +30,9 @@ class RevealViewController: UIViewController {
       self.addChildViewController(vc)
       self.view.addSubview(vc.view)
       vc.didMove(toParentViewController: self)
+      
+      let frontVC = vc.viewControllers[0] as? FrontViewController
+      frontVC?.delegate = self
     }
   }
   
