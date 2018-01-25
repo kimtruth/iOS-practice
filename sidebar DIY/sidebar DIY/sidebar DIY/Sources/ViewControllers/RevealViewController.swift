@@ -44,6 +44,9 @@ class RevealViewController: UIViewController {
         self.addChildViewController(vc)
         self.view.addSubview(vc.view)
         
+        let sideVC = vc as? SideBarViewController
+        sideVC?.delegate = self
+        
         vc.didMove(toParentViewController: self)
         
         self.view.bringSubview(toFront: (self.contentVC?.view)!)

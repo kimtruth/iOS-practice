@@ -10,6 +10,8 @@ import UIKit
 
 class SideBarViewController: UITableViewController {
   
+  var delegate: RevealViewController?
+  
   /// 메뉴 제목 배열
   let titles = [
     "메뉴 01",
@@ -62,4 +64,12 @@ class SideBarViewController: UITableViewController {
     return cell
   }
   
+  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    if indexPath.row == 1 {
+      let uv = self.storyboard?.instantiateViewController(withIdentifier: "Second")
+      let target = self.delegate?.contentVC as! UINavigationController
+      target.pushViewController(uv!, animated: true)
+      self.delegate?.closeSideBar(nil)
+    }
+  }
 }
