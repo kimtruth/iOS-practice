@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		98C0D8BD20197E5B00E4DFA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C0D8BC20197E5B00E4DFA9 /* AppDelegate.swift */; };
-		98C0D8BF20197E5B00E4DFA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C0D8BE20197E5B00E4DFA9 /* ViewController.swift */; };
 		98C0D8C220197E5B00E4DFA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98C0D8C020197E5B00E4DFA9 /* Main.storyboard */; };
 		98C0D8C420197E5B00E4DFA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98C0D8C320197E5B00E4DFA9 /* Assets.xcassets */; };
 		98C0D8C720197E5B00E4DFA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98C0D8C520197E5B00E4DFA9 /* LaunchScreen.storyboard */; };
+		98C0D8D2201980E400E4DFA9 /* RevealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C0D8D1201980E400E4DFA9 /* RevealViewController.swift */; };
+		98C0D8D4201980F100E4DFA9 /* FrontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C0D8D3201980F100E4DFA9 /* FrontViewController.swift */; };
+		98C0D8D62019810400E4DFA9 /* SideBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C0D8D52019810400E4DFA9 /* SideBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		98C0D8B920197E5B00E4DFA9 /* sidebar DIY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sidebar DIY.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C0D8BC20197E5B00E4DFA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		98C0D8BE20197E5B00E4DFA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		98C0D8C120197E5B00E4DFA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98C0D8C320197E5B00E4DFA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98C0D8C620197E5B00E4DFA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98C0D8C820197E5B00E4DFA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98C0D8D1201980E400E4DFA9 /* RevealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevealViewController.swift; sourceTree = "<group>"; };
+		98C0D8D3201980F100E4DFA9 /* FrontViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontViewController.swift; sourceTree = "<group>"; };
+		98C0D8D52019810400E4DFA9 /* SideBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +70,8 @@
 			isa = PBXGroup;
 			children = (
 				98C0D8C020197E5B00E4DFA9 /* Main.storyboard */,
-				98C0D8C320197E5B00E4DFA9 /* Assets.xcassets */,
 				98C0D8C520197E5B00E4DFA9 /* LaunchScreen.storyboard */,
+				98C0D8C320197E5B00E4DFA9 /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -83,7 +87,9 @@
 		98C0D8D020197E7500E4DFA9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				98C0D8BE20197E5B00E4DFA9 /* ViewController.swift */,
+				98C0D8D1201980E400E4DFA9 /* RevealViewController.swift */,
+				98C0D8D3201980F100E4DFA9 /* FrontViewController.swift */,
+				98C0D8D52019810400E4DFA9 /* SideBarViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -160,8 +166,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98C0D8BF20197E5B00E4DFA9 /* ViewController.swift in Sources */,
+				98C0D8D4201980F100E4DFA9 /* FrontViewController.swift in Sources */,
 				98C0D8BD20197E5B00E4DFA9 /* AppDelegate.swift in Sources */,
+				98C0D8D2201980E400E4DFA9 /* RevealViewController.swift in Sources */,
+				98C0D8D62019810400E4DFA9 /* SideBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
