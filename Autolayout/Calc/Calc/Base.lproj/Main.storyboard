@@ -1,0 +1,1284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calc" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQO-mr-ynN">
+                                <rect key="frame" x="10" y="26.5" width="647" height="72"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="80"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact">
+                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="60"/>
+                                </variation>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lta-Hx-M9R" userLabel="5th row">
+                                <rect key="frame" x="0.0" y="108.5" width="667" height="53"/>
+                                <subviews>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTT-cO-MZ4" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="66.5" height="53"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                        <state key="normal" title="(">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact" hidden="NO"/>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXp-EH-XJ3" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="66.5" y="0.0" width="67" height="53"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                        <state key="normal" title=")">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact" hidden="NO"/>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNx-hA-cbf" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="133.5" y="0.0" width="66.5" height="53"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                        <state key="normal" title="mc">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact" hidden="NO"/>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTU-aN-5Ed" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="200" y="0.0" width="67" height="53"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                        <state key="normal" title="m+">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact" hidden="NO"/>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cor-1N-96O" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="267" y="0.0" width="66.5" height="53"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                        <state key="normal" title="m-">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact" hidden="NO"/>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKv-Tp-U5I" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="333.5" y="0.0" width="66.5" height="53"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                        <state key="normal" title="mr">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact" hidden="NO"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xts-TZ-KK1" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="400" y="0.0" width="67" height="53"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                        <state key="normal" title="AC">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact">
+                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                        </variation>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b57-x7-7uc" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="467" y="0.0" width="66.5" height="53"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                        <state key="normal" title="+/-">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact">
+                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                        </variation>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ape-lW-1Vp" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="533.5" y="0.0" width="67" height="53"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                        <state key="normal" title="%">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact">
+                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                        </variation>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mto-rq-sRa" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="600.5" y="0.0" width="66.5" height="53"/>
+                                        <color key="backgroundColor" red="1" green="0.44199867444625862" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="mto-rq-sRa" secondAttribute="height" multiplier="1:0.8" id="iQ4-EA-sKe"/>
+                                            <constraint firstAttribute="width" secondItem="mto-rq-sRa" secondAttribute="height" multiplier="1:1" id="thr-rP-nVQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
+                                        <state key="normal" title="÷">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="iQ4-EA-sKe"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                            <mask key="constraints">
+                                                <include reference="iQ4-EA-sKe"/>
+                                                <exclude reference="thr-rP-nVQ"/>
+                                            </mask>
+                                        </variation>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="mto-rq-sRa" firstAttribute="width" secondItem="Xts-TZ-KK1" secondAttribute="width" id="1Yv-VB-RhA"/>
+                                    <constraint firstItem="ape-lW-1Vp" firstAttribute="width" secondItem="CTT-cO-MZ4" secondAttribute="width" id="1ZV-0T-17x"/>
+                                    <constraint firstItem="yTU-aN-5Ed" firstAttribute="width" secondItem="CTT-cO-MZ4" secondAttribute="width" id="3ci-oN-zRB"/>
+                                    <constraint firstItem="mto-rq-sRa" firstAttribute="width" secondItem="CTT-cO-MZ4" secondAttribute="width" id="DPY-q8-FYM"/>
+                                    <constraint firstItem="cor-1N-96O" firstAttribute="width" secondItem="CTT-cO-MZ4" secondAttribute="width" id="XPo-UE-ta5"/>
+                                    <constraint firstItem="JXp-EH-XJ3" firstAttribute="width" secondItem="CTT-cO-MZ4" secondAttribute="width" id="aTP-DD-lBv"/>
+                                    <constraint firstItem="ape-lW-1Vp" firstAttribute="width" secondItem="Xts-TZ-KK1" secondAttribute="width" id="arL-Qc-snK"/>
+                                    <constraint firstItem="LKv-Tp-U5I" firstAttribute="width" secondItem="CTT-cO-MZ4" secondAttribute="width" id="cZQ-ed-pEe"/>
+                                    <constraint firstItem="b57-x7-7uc" firstAttribute="width" secondItem="CTT-cO-MZ4" secondAttribute="width" id="ddm-hP-37o"/>
+                                    <constraint firstItem="Xts-TZ-KK1" firstAttribute="width" secondItem="CTT-cO-MZ4" secondAttribute="width" id="haz-js-ug7"/>
+                                    <constraint firstItem="QNx-hA-cbf" firstAttribute="width" secondItem="CTT-cO-MZ4" secondAttribute="width" id="jXd-G4-m6I"/>
+                                    <constraint firstItem="b57-x7-7uc" firstAttribute="width" secondItem="Xts-TZ-KK1" secondAttribute="width" id="ziO-eo-bjO"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="aTP-DD-lBv"/>
+                                        <exclude reference="jXd-G4-m6I"/>
+                                        <exclude reference="3ci-oN-zRB"/>
+                                        <exclude reference="XPo-UE-ta5"/>
+                                        <exclude reference="cZQ-ed-pEe"/>
+                                        <exclude reference="haz-js-ug7"/>
+                                        <exclude reference="ddm-hP-37o"/>
+                                        <exclude reference="1ZV-0T-17x"/>
+                                        <exclude reference="DPY-q8-FYM"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="CTT-cO-MZ4"/>
+                                        <include reference="JXp-EH-XJ3"/>
+                                        <include reference="QNx-hA-cbf"/>
+                                        <include reference="yTU-aN-5Ed"/>
+                                        <include reference="cor-1N-96O"/>
+                                        <include reference="LKv-Tp-U5I"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="aTP-DD-lBv"/>
+                                        <include reference="jXd-G4-m6I"/>
+                                        <include reference="3ci-oN-zRB"/>
+                                        <include reference="XPo-UE-ta5"/>
+                                        <include reference="cZQ-ed-pEe"/>
+                                        <include reference="haz-js-ug7"/>
+                                        <include reference="ddm-hP-37o"/>
+                                        <exclude reference="ziO-eo-bjO"/>
+                                        <include reference="1ZV-0T-17x"/>
+                                        <exclude reference="arL-Qc-snK"/>
+                                        <exclude reference="1Yv-VB-RhA"/>
+                                        <include reference="DPY-q8-FYM"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6vb-oJ-cxn" userLabel="4th row">
+                                <rect key="frame" x="0.0" y="161.5" width="667" height="53.5"/>
+                                <subviews>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jaX-Kq-ZyW" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="66.5" height="53.5"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                        <state key="normal" title="2nd">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact" hidden="NO"/>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vqp-1A-bnm" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="66.5" y="0.0" width="67" height="53.5"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                        <state key="normal" title="x²">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact" hidden="NO"/>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TrS-vc-0jb" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="133.5" y="0.0" width="66.5" height="53.5"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                        <state key="normal" title="x³">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact" hidden="NO"/>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rw8-Zp-Qk7" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="200" y="0.0" width="67" height="53.5"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                        <state key="normal" title="xⁿ">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact" hidden="NO"/>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WOH-a9-fv5" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="267" y="0.0" width="66.5" height="53.5"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                        <state key="normal" title="eⁿ">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact" hidden="NO"/>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXj-AJ-WRX" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="333.5" y="0.0" width="66.5" height="53.5"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                        <state key="normal" title="10ⁿ">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact" hidden="NO"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tse-nQ-yOH" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="400" y="0.0" width="67" height="53.5"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
+                                        <state key="normal" title="7">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact">
+                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                        </variation>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mUl-eV-Gs2" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="467" y="0.0" width="66.5" height="53.5"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
+                                        <state key="normal" title="8">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact">
+                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                        </variation>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7w5-gN-8Kn" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="533.5" y="0.0" width="67" height="53.5"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
+                                        <state key="normal" title="9">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact">
+                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                        </variation>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rab-75-hcK" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="600.5" y="0.0" width="66.5" height="53.5"/>
+                                        <color key="backgroundColor" red="1" green="0.44199867440000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="rab-75-hcK" secondAttribute="height" multiplier="1:1" id="fsE-RM-UVA"/>
+                                            <constraint firstAttribute="width" secondItem="rab-75-hcK" secondAttribute="height" multiplier="1:0.8" id="pjN-gl-y5k"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
+                                        <state key="normal" title="×">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="pjN-gl-y5k"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                            <mask key="constraints">
+                                                <exclude reference="fsE-RM-UVA"/>
+                                                <include reference="pjN-gl-y5k"/>
+                                            </mask>
+                                        </variation>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="rw8-Zp-Qk7" firstAttribute="width" secondItem="jaX-Kq-ZyW" secondAttribute="width" id="52H-jX-Vp7"/>
+                                    <constraint firstItem="TrS-vc-0jb" firstAttribute="width" secondItem="jaX-Kq-ZyW" secondAttribute="width" id="62a-UF-7gE"/>
+                                    <constraint firstItem="7w5-gN-8Kn" firstAttribute="width" secondItem="Tse-nQ-yOH" secondAttribute="width" id="96O-6h-chc"/>
+                                    <constraint firstItem="mUl-eV-Gs2" firstAttribute="width" secondItem="Tse-nQ-yOH" secondAttribute="width" id="ARw-Dh-Hq0"/>
+                                    <constraint firstItem="rab-75-hcK" firstAttribute="width" secondItem="jaX-Kq-ZyW" secondAttribute="width" id="Gnv-3B-NSt"/>
+                                    <constraint firstItem="DXj-AJ-WRX" firstAttribute="width" secondItem="jaX-Kq-ZyW" secondAttribute="width" id="LKZ-5B-qpj"/>
+                                    <constraint firstItem="Tse-nQ-yOH" firstAttribute="width" secondItem="jaX-Kq-ZyW" secondAttribute="width" id="LjO-gp-Q7w"/>
+                                    <constraint firstItem="WOH-a9-fv5" firstAttribute="width" secondItem="jaX-Kq-ZyW" secondAttribute="width" id="mt9-OF-NVe"/>
+                                    <constraint firstItem="vqp-1A-bnm" firstAttribute="width" secondItem="jaX-Kq-ZyW" secondAttribute="width" id="osy-vd-arf"/>
+                                    <constraint firstItem="rab-75-hcK" firstAttribute="width" secondItem="Tse-nQ-yOH" secondAttribute="width" id="pBc-g2-Qwa"/>
+                                    <constraint firstItem="mUl-eV-Gs2" firstAttribute="width" secondItem="jaX-Kq-ZyW" secondAttribute="width" id="w11-3m-qAP"/>
+                                    <constraint firstItem="7w5-gN-8Kn" firstAttribute="width" secondItem="jaX-Kq-ZyW" secondAttribute="width" id="wtR-xT-xAM"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="osy-vd-arf"/>
+                                        <exclude reference="62a-UF-7gE"/>
+                                        <exclude reference="52H-jX-Vp7"/>
+                                        <exclude reference="mt9-OF-NVe"/>
+                                        <exclude reference="LKZ-5B-qpj"/>
+                                        <exclude reference="LjO-gp-Q7w"/>
+                                        <exclude reference="w11-3m-qAP"/>
+                                        <exclude reference="wtR-xT-xAM"/>
+                                        <exclude reference="Gnv-3B-NSt"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="jaX-Kq-ZyW"/>
+                                        <include reference="vqp-1A-bnm"/>
+                                        <include reference="TrS-vc-0jb"/>
+                                        <include reference="rw8-Zp-Qk7"/>
+                                        <include reference="WOH-a9-fv5"/>
+                                        <include reference="DXj-AJ-WRX"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="osy-vd-arf"/>
+                                        <include reference="62a-UF-7gE"/>
+                                        <include reference="52H-jX-Vp7"/>
+                                        <include reference="mt9-OF-NVe"/>
+                                        <include reference="LKZ-5B-qpj"/>
+                                        <include reference="LjO-gp-Q7w"/>
+                                        <exclude reference="ARw-Dh-Hq0"/>
+                                        <include reference="w11-3m-qAP"/>
+                                        <exclude reference="96O-6h-chc"/>
+                                        <include reference="wtR-xT-xAM"/>
+                                        <include reference="Gnv-3B-NSt"/>
+                                        <exclude reference="pBc-g2-Qwa"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RMg-0k-vX4" userLabel="3rd row">
+                                <rect key="frame" x="0.0" y="215" width="667" height="53.5"/>
+                                <subviews>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ivz-AH-tRk" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="66.5" height="53.5"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                        <state key="normal" title="1/x">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact" hidden="NO"/>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rAU-zf-hST" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="66.5" y="0.0" width="66.5" height="53.5"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                        <state key="normal" title="sqrt">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact" hidden="NO"/>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7u-rp-KgU" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="133" y="0.0" width="67.5" height="53.5"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                        <state key="normal" title="cbrt">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact" hidden="NO"/>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbr-Wh-kZB" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="200.5" y="0.0" width="66.5" height="53.5"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                        <state key="normal" title="y√x">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact" hidden="NO"/>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pr1-kU-iqD" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="267" y="0.0" width="66.5" height="53.5"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                        <state key="normal" title="ln">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact" hidden="NO"/>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnN-aC-757" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="333.5" y="0.0" width="66.5" height="53.5"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                        <state key="normal" title="log">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact" hidden="NO"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFB-FI-oaH" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="400" y="0.0" width="67" height="53.5"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
+                                        <state key="normal" title="4">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact">
+                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                        </variation>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rcb-52-HiG" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="467" y="0.0" width="67" height="53.5"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
+                                        <state key="normal" title="5">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact">
+                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                        </variation>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XmE-iO-6hr" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="534" y="0.0" width="66.5" height="53.5"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
+                                        <state key="normal" title="6">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact">
+                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                        </variation>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WN8-pR-hbu" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="600.5" y="0.0" width="66.5" height="53.5"/>
+                                        <color key="backgroundColor" red="1" green="0.44199867440000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="WN8-pR-hbu" secondAttribute="height" multiplier="1:0.8" id="YFd-tI-HZs"/>
+                                            <constraint firstAttribute="width" secondItem="WN8-pR-hbu" secondAttribute="height" multiplier="1:1" id="uZH-Qt-8Fw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
+                                        <state key="normal" title="-">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="YFd-tI-HZs"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                            <mask key="constraints">
+                                                <include reference="YFd-tI-HZs"/>
+                                                <exclude reference="uZH-Qt-8Fw"/>
+                                            </mask>
+                                        </variation>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="pr1-kU-iqD" firstAttribute="width" secondItem="WN8-pR-hbu" secondAttribute="width" id="0oa-mX-Ivn"/>
+                                    <constraint firstItem="WN8-pR-hbu" firstAttribute="width" secondItem="hFB-FI-oaH" secondAttribute="width" id="5i0-zS-BZh"/>
+                                    <constraint firstItem="p7u-rp-KgU" firstAttribute="width" secondItem="WN8-pR-hbu" secondAttribute="width" id="6zf-Fz-Z4P"/>
+                                    <constraint firstItem="Rcb-52-HiG" firstAttribute="width" secondItem="WN8-pR-hbu" secondAttribute="width" id="83h-pb-DJ0"/>
+                                    <constraint firstItem="Rcb-52-HiG" firstAttribute="width" secondItem="hFB-FI-oaH" secondAttribute="width" id="CWQ-Jx-vMf"/>
+                                    <constraint firstItem="rAU-zf-hST" firstAttribute="width" secondItem="WN8-pR-hbu" secondAttribute="width" id="Hs9-1V-eMS"/>
+                                    <constraint firstItem="Ivz-AH-tRk" firstAttribute="width" secondItem="WN8-pR-hbu" secondAttribute="width" id="VHI-Z5-C1t"/>
+                                    <constraint firstItem="XmE-iO-6hr" firstAttribute="width" secondItem="WN8-pR-hbu" secondAttribute="width" id="Wuq-cb-Adb"/>
+                                    <constraint firstItem="XmE-iO-6hr" firstAttribute="width" secondItem="hFB-FI-oaH" secondAttribute="width" id="j9Y-es-uY0"/>
+                                    <constraint firstItem="hFB-FI-oaH" firstAttribute="width" secondItem="WN8-pR-hbu" secondAttribute="width" id="t5g-X5-8ww"/>
+                                    <constraint firstItem="Wbr-Wh-kZB" firstAttribute="width" secondItem="WN8-pR-hbu" secondAttribute="width" id="vCM-06-HPt"/>
+                                    <constraint firstItem="hnN-aC-757" firstAttribute="width" secondItem="WN8-pR-hbu" secondAttribute="width" id="xtT-co-SVU"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="VHI-Z5-C1t"/>
+                                        <exclude reference="Hs9-1V-eMS"/>
+                                        <exclude reference="6zf-Fz-Z4P"/>
+                                        <exclude reference="vCM-06-HPt"/>
+                                        <exclude reference="0oa-mX-Ivn"/>
+                                        <exclude reference="xtT-co-SVU"/>
+                                        <exclude reference="t5g-X5-8ww"/>
+                                        <exclude reference="83h-pb-DJ0"/>
+                                        <exclude reference="Wuq-cb-Adb"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="Ivz-AH-tRk"/>
+                                        <include reference="rAU-zf-hST"/>
+                                        <include reference="p7u-rp-KgU"/>
+                                        <include reference="Wbr-Wh-kZB"/>
+                                        <include reference="pr1-kU-iqD"/>
+                                        <include reference="hnN-aC-757"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="VHI-Z5-C1t"/>
+                                        <include reference="Hs9-1V-eMS"/>
+                                        <include reference="6zf-Fz-Z4P"/>
+                                        <include reference="vCM-06-HPt"/>
+                                        <include reference="0oa-mX-Ivn"/>
+                                        <include reference="xtT-co-SVU"/>
+                                        <include reference="t5g-X5-8ww"/>
+                                        <include reference="83h-pb-DJ0"/>
+                                        <exclude reference="CWQ-Jx-vMf"/>
+                                        <include reference="Wuq-cb-Adb"/>
+                                        <exclude reference="j9Y-es-uY0"/>
+                                        <exclude reference="5i0-zS-BZh"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0eG-Bm-oGO" userLabel="2nd row">
+                                <rect key="frame" x="0.0" y="268.5" width="667" height="53"/>
+                                <subviews>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0A-6k-9bn" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="67" height="53"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                        <state key="normal" title="x!">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact" hidden="NO"/>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZi-C9-Mqk" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="67" y="0.0" width="66" height="53"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                        <state key="normal" title="sin">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact" hidden="NO"/>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSo-nK-r7r" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="133" y="0.0" width="67" height="53"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                        <state key="normal" title="cos">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact" hidden="NO"/>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wj4-SD-2qh" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="200" y="0.0" width="66" height="53"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                        <state key="normal" title="tan">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact" hidden="NO"/>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6W-Zq-4Ao" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="266" y="0.0" width="67" height="53"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                        <state key="normal" title="e">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact" hidden="NO"/>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebQ-HC-eyx" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="333" y="0.0" width="67" height="53"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                        <state key="normal" title="EE">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact" hidden="NO"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zov-l8-Pdt" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="400" y="0.0" width="66.5" height="53"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
+                                        <state key="normal" title="1">
+                                            <color key="titleColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact">
+                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                        </variation>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QEo-vP-u0U" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="466.5" y="0.0" width="67" height="53"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
+                                        <state key="normal" title="2">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact">
+                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                        </variation>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Td8-aS-ns7" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="533.5" y="0.0" width="66.5" height="53"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
+                                        <state key="normal" title="3">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact">
+                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                        </variation>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZ0-ce-ERs" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="600" y="0.0" width="67" height="53"/>
+                                        <color key="backgroundColor" red="1" green="0.44199867440000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="JZ0-ce-ERs" secondAttribute="height" multiplier="1:0.8" id="ihD-PK-nlE"/>
+                                            <constraint firstAttribute="width" secondItem="JZ0-ce-ERs" secondAttribute="height" multiplier="1:1" id="rMf-7H-4yW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
+                                        <state key="normal" title="+">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="ihD-PK-nlE"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                            <mask key="constraints">
+                                                <include reference="ihD-PK-nlE"/>
+                                                <exclude reference="rMf-7H-4yW"/>
+                                            </mask>
+                                        </variation>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Zov-l8-Pdt" firstAttribute="width" secondItem="JZ0-ce-ERs" secondAttribute="width" id="S0a-eT-6pC"/>
+                                    <constraint firstItem="wj4-SD-2qh" firstAttribute="width" secondItem="JZ0-ce-ERs" secondAttribute="width" id="Xtk-02-9xS"/>
+                                    <constraint firstItem="QEo-vP-u0U" firstAttribute="width" secondItem="JZ0-ce-ERs" secondAttribute="width" id="amI-Fk-Kzq"/>
+                                    <constraint firstItem="Td8-aS-ns7" firstAttribute="width" secondItem="JZ0-ce-ERs" secondAttribute="width" id="dRz-Bx-kSQ"/>
+                                    <constraint firstItem="QEo-vP-u0U" firstAttribute="width" secondItem="Zov-l8-Pdt" secondAttribute="width" id="f5B-nD-BYb"/>
+                                    <constraint firstItem="T0A-6k-9bn" firstAttribute="width" secondItem="JZ0-ce-ERs" secondAttribute="width" id="f9C-FS-u0c"/>
+                                    <constraint firstItem="lZi-C9-Mqk" firstAttribute="width" secondItem="JZ0-ce-ERs" secondAttribute="width" id="g8Y-0c-eRt"/>
+                                    <constraint firstItem="ebQ-HC-eyx" firstAttribute="width" secondItem="JZ0-ce-ERs" secondAttribute="width" id="hvc-hd-hwx"/>
+                                    <constraint firstItem="a6W-Zq-4Ao" firstAttribute="width" secondItem="JZ0-ce-ERs" secondAttribute="width" id="kdm-7a-cG9"/>
+                                    <constraint firstItem="JZ0-ce-ERs" firstAttribute="width" secondItem="Zov-l8-Pdt" secondAttribute="width" id="prH-dI-Hlx"/>
+                                    <constraint firstItem="OSo-nK-r7r" firstAttribute="width" secondItem="JZ0-ce-ERs" secondAttribute="width" id="yDV-Av-2mD"/>
+                                    <constraint firstItem="Td8-aS-ns7" firstAttribute="width" secondItem="Zov-l8-Pdt" secondAttribute="width" id="zwu-k3-dNH"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="f9C-FS-u0c"/>
+                                        <exclude reference="g8Y-0c-eRt"/>
+                                        <exclude reference="yDV-Av-2mD"/>
+                                        <exclude reference="Xtk-02-9xS"/>
+                                        <exclude reference="kdm-7a-cG9"/>
+                                        <exclude reference="hvc-hd-hwx"/>
+                                        <exclude reference="S0a-eT-6pC"/>
+                                        <exclude reference="amI-Fk-Kzq"/>
+                                        <exclude reference="dRz-Bx-kSQ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="f9C-FS-u0c"/>
+                                        <include reference="g8Y-0c-eRt"/>
+                                        <include reference="yDV-Av-2mD"/>
+                                        <include reference="Xtk-02-9xS"/>
+                                        <include reference="kdm-7a-cG9"/>
+                                        <include reference="hvc-hd-hwx"/>
+                                        <include reference="S0a-eT-6pC"/>
+                                        <include reference="amI-Fk-Kzq"/>
+                                        <exclude reference="f5B-nD-BYb"/>
+                                        <include reference="dRz-Bx-kSQ"/>
+                                        <exclude reference="zwu-k3-dNH"/>
+                                        <exclude reference="prH-dI-Hlx"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RYR-IY-orm" userLabel="1st row">
+                                <rect key="frame" x="0.0" y="321.5" width="667" height="53.5"/>
+                                <subviews>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dck-We-QkT" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="66.5" height="53.5"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                        <state key="normal" title="Rand">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact" hidden="NO"/>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwy-su-4D2" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="66.5" y="0.0" width="66.5" height="53.5"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                        <state key="normal" title="π">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact" hidden="NO"/>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agf-7q-yhO" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="133" y="0.0" width="67.5" height="53.5"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                        <state key="normal" title="tanh">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact" hidden="NO"/>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KNj-7g-3Bq" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="200.5" y="0.0" width="66.5" height="53.5"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                        <state key="normal" title="cosh">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact" hidden="NO"/>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QsJ-Rb-Tza" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="267" y="0.0" width="66.5" height="53.5"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                        <state key="normal" title="sinh">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact" hidden="NO"/>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UwN-dW-BPk" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="333.5" y="0.0" width="66.5" height="53.5"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                        <state key="normal" title="Rad">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact" hidden="NO"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ysb-Ka-PVV" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="400" y="0.0" width="133.5" height="53.5"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
+                                        <state key="normal" title="    0">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact">
+                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                        </variation>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQH-NH-GGP" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="533.5" y="0.0" width="67" height="53.5"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                        <state key="normal" title=".">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=compact">
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                        </variation>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkj-pw-zW7" customClass="BorderButton" customModule="Calc" customModuleProvider="target">
+                                        <rect key="frame" x="600.5" y="0.0" width="66.5" height="53.5"/>
+                                        <color key="backgroundColor" red="1" green="0.44199867440000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="fkj-pw-zW7" secondAttribute="height" multiplier="1:0.8" id="Ry1-u9-e72"/>
+                                            <constraint firstAttribute="width" secondItem="fkj-pw-zW7" secondAttribute="height" multiplier="1:1" id="jfW-4s-3c2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
+                                        <state key="normal" title="=">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Ry1-u9-e72"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                            <mask key="constraints">
+                                                <include reference="Ry1-u9-e72"/>
+                                                <exclude reference="jfW-4s-3c2"/>
+                                            </mask>
+                                        </variation>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="agf-7q-yhO" firstAttribute="width" secondItem="fkj-pw-zW7" secondAttribute="width" id="4gX-4y-NY3"/>
+                                    <constraint firstItem="UwN-dW-BPk" firstAttribute="width" secondItem="fkj-pw-zW7" secondAttribute="width" id="Dc8-6m-LQf"/>
+                                    <constraint firstItem="fwy-su-4D2" firstAttribute="width" secondItem="fkj-pw-zW7" secondAttribute="width" id="Jny-ah-QUD"/>
+                                    <constraint firstItem="Dck-We-QkT" firstAttribute="width" secondItem="fkj-pw-zW7" secondAttribute="width" id="K0L-Iw-3bJ"/>
+                                    <constraint firstItem="QsJ-Rb-Tza" firstAttribute="width" secondItem="fkj-pw-zW7" secondAttribute="width" id="QL8-hD-5l4"/>
+                                    <constraint firstItem="ysb-Ka-PVV" firstAttribute="width" secondItem="fkj-pw-zW7" secondAttribute="width" multiplier="2:1" id="SEc-bA-1nw"/>
+                                    <constraint firstItem="KNj-7g-3Bq" firstAttribute="width" secondItem="fkj-pw-zW7" secondAttribute="width" id="aDa-Mb-Ocb"/>
+                                    <constraint firstItem="hQH-NH-GGP" firstAttribute="width" secondItem="fkj-pw-zW7" secondAttribute="width" id="q9E-AZ-aux"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="K0L-Iw-3bJ"/>
+                                        <exclude reference="Jny-ah-QUD"/>
+                                        <exclude reference="4gX-4y-NY3"/>
+                                        <exclude reference="aDa-Mb-Ocb"/>
+                                        <exclude reference="QL8-hD-5l4"/>
+                                        <exclude reference="Dc8-6m-LQf"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="K0L-Iw-3bJ"/>
+                                        <include reference="Jny-ah-QUD"/>
+                                        <include reference="4gX-4y-NY3"/>
+                                        <include reference="aDa-Mb-Ocb"/>
+                                        <include reference="QL8-hD-5l4"/>
+                                        <include reference="Dc8-6m-LQf"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0eG-Bm-oGO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2Nr-Ig-EBf"/>
+                            <constraint firstItem="RMg-0k-vX4" firstAttribute="top" secondItem="6vb-oJ-cxn" secondAttribute="bottom" id="6SQ-LQ-bx4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RYR-IY-orm" secondAttribute="trailing" id="6p9-vB-edM"/>
+                            <constraint firstItem="RMg-0k-vX4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="D8p-Sd-Puw"/>
+                            <constraint firstItem="RYR-IY-orm" firstAttribute="top" secondItem="0eG-Bm-oGO" secondAttribute="bottom" id="FTJ-ev-6lj"/>
+                            <constraint firstItem="0eG-Bm-oGO" firstAttribute="top" secondItem="RMg-0k-vX4" secondAttribute="bottom" id="Hhw-hh-92X"/>
+                            <constraint firstItem="6vb-oJ-cxn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IXY-0W-I6Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RYR-IY-orm" secondAttribute="bottom" id="J5O-I3-H4W"/>
+                            <constraint firstItem="Lta-Hx-M9R" firstAttribute="top" secondItem="AQO-mr-ynN" secondAttribute="bottom" constant="10" id="SbX-k7-4B5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6vb-oJ-cxn" secondAttribute="trailing" id="UzL-tm-QJx"/>
+                            <constraint firstItem="RMg-0k-vX4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="V7y-Tr-5Jl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AQO-mr-ynN" secondAttribute="trailing" constant="10" id="Xf3-Sk-atx"/>
+                            <constraint firstItem="Lta-Hx-M9R" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZpZ-wJ-qyN"/>
+                            <constraint firstItem="6vb-oJ-cxn" firstAttribute="top" secondItem="Lta-Hx-M9R" secondAttribute="bottom" id="aI5-HY-cJI"/>
+                            <constraint firstItem="Lta-Hx-M9R" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bN4-xy-zQV"/>
+                            <constraint firstItem="6vb-oJ-cxn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cz8-v7-a5h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lta-Hx-M9R" secondAttribute="trailing" id="dgt-2W-GHA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AQO-mr-ynN" secondAttribute="trailing" constant="20" id="hev-Jj-IaM"/>
+                            <constraint firstItem="0eG-Bm-oGO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="j6g-gN-vUI"/>
+                            <constraint firstItem="Lta-Hx-M9R" firstAttribute="top" secondItem="AQO-mr-ynN" secondAttribute="bottom" constant="20" id="kVn-Ew-9PN"/>
+                            <constraint firstItem="RYR-IY-orm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kkp-BS-qXw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0eG-Bm-oGO" secondAttribute="trailing" id="mdJ-ia-KAR"/>
+                            <constraint firstItem="AQO-mr-ynN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tCj-6w-Gd3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RMg-0k-vX4" secondAttribute="trailing" id="tcZ-DG-4fz"/>
+                            <constraint firstItem="AQO-mr-ynN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="y5w-zv-L9w"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Xf3-Sk-atx"/>
+                                <exclude reference="y5w-zv-L9w"/>
+                                <exclude reference="SbX-k7-4B5"/>
+                                <exclude reference="bN4-xy-zQV"/>
+                                <exclude reference="IXY-0W-I6Y"/>
+                                <exclude reference="V7y-Tr-5Jl"/>
+                                <exclude reference="j6g-gN-vUI"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="Xf3-Sk-atx"/>
+                                <exclude reference="hev-Jj-IaM"/>
+                                <exclude reference="tCj-6w-Gd3"/>
+                                <include reference="y5w-zv-L9w"/>
+                                <include reference="SbX-k7-4B5"/>
+                                <exclude reference="ZpZ-wJ-qyN"/>
+                                <include reference="bN4-xy-zQV"/>
+                                <exclude reference="kVn-Ew-9PN"/>
+                                <include reference="IXY-0W-I6Y"/>
+                                <exclude reference="cz8-v7-a5h"/>
+                                <exclude reference="D8p-Sd-Puw"/>
+                                <include reference="V7y-Tr-5Jl"/>
+                                <exclude reference="2Nr-Ig-EBf"/>
+                                <include reference="j6g-gN-vUI"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
