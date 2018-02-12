@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="award" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0jy-Y1-tcd">
+                                <rect key="frame" x="20" y="36.5" width="280" height="407"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="award.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="yGM-ys-qG3">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="407.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="yGM-ys-qG3" secondAttribute="height" multiplier="740:1076" id="vhv-FY-4fK"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="상         장" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="b9f-qd-sE1">
+                                        <rect key="frame" x="85.5" y="0.0" width="109.5" height="147"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="b9f-qd-sE1" firstAttribute="width" secondItem="yGM-ys-qG3" secondAttribute="height" multiplier="73:272" id="59D-nd-AJI"/>
+                                    <constraint firstItem="yGM-ys-qG3" firstAttribute="top" secondItem="0jy-Y1-tcd" secondAttribute="top" id="Jey-Cy-EPY"/>
+                                    <constraint firstItem="yGM-ys-qG3" firstAttribute="leading" secondItem="0jy-Y1-tcd" secondAttribute="leading" id="KUN-Ke-DbN"/>
+                                    <constraint firstItem="b9f-qd-sE1" firstAttribute="bottom" secondItem="yGM-ys-qG3" secondAttribute="bottom" multiplier="0.36" id="ONC-3j-2nV"/>
+                                    <constraint firstItem="b9f-qd-sE1" firstAttribute="top" secondItem="yGM-ys-qG3" secondAttribute="top" id="QrZ-RQ-mjN"/>
+                                    <constraint firstAttribute="trailing" secondItem="yGM-ys-qG3" secondAttribute="trailing" id="Uy6-gS-BT6"/>
+                                    <constraint firstAttribute="bottom" secondItem="yGM-ys-qG3" secondAttribute="bottom" id="Vcl-A9-T30"/>
+                                    <constraint firstItem="b9f-qd-sE1" firstAttribute="centerX" secondItem="0jy-Y1-tcd" secondAttribute="centerX" id="utj-cY-Gkj"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="여러 줄의  상장내용을 적게되면  lines에 주의" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="VQH-ON-cId">
+                                <rect key="frame" x="88" y="36.5" width="144" height="496"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0jy-Y1-tcd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="L0g-ei-5cN"/>
+                            <constraint firstItem="VQH-ON-cId" firstAttribute="top" secondItem="yGM-ys-qG3" secondAttribute="top" id="YeE-Vo-pm3"/>
+                            <constraint firstItem="VQH-ON-cId" firstAttribute="bottom" secondItem="yGM-ys-qG3" secondAttribute="bottom" multiplier="1.2" id="ZKA-sK-sLu"/>
+                            <constraint firstItem="VQH-ON-cId" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h7O-wA-Qhg"/>
+                            <constraint firstItem="0jy-Y1-tcd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="isW-ia-n7X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0jy-Y1-tcd" secondAttribute="trailing" constant="20" id="n42-Ad-tTq"/>
+                            <constraint firstItem="VQH-ON-cId" firstAttribute="width" secondItem="yGM-ys-qG3" secondAttribute="height" multiplier="6:17" id="ncI-sy-GCn"/>
+                            <constraint firstItem="0jy-Y1-tcd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sxB-aN-Pfd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56.799999999999997" y="25.637181409295355"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="award.jpg" width="740" height="1076"/>
+    </resources>
+</document>
