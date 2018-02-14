@@ -10,6 +10,7 @@ import UIKit
 
 class YourBubbleCell: UITableViewCell {
   
+  @IBOutlet weak var chatLabel: UILabel!
   @IBOutlet weak var profileImage: UIImageView!
   
     override func awakeFromNib() {

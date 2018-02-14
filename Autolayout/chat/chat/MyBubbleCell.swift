@@ -10,6 +10,7 @@ import UIKit
 
 class MyBubbleCell: UITableViewCell {
   
+  @IBOutlet weak var chatLabel: UILabel!
   override func awakeFromNib() {
     super.awakeFromNib()
     // Initialization code
