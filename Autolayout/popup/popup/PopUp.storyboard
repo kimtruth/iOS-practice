@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pop Up View Controller-->
+        <scene sceneID="ZON-fC-UKH">
+            <objects>
+                <viewController storyboardIdentifier="popupVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1Y5-wR-TcZ" customClass="PopUpViewController" customModule="popup" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zc4-EB-M2p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z91-iY-gz5">
+                                <rect key="frame" x="40" y="128.5" width="295" height="410"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mTA-OC-iY6">
+                                        <rect key="frame" x="0.0" y="0.0" width="295" height="350"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="350" id="oWK-AK-FVN"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTe-Sp-kjx">
+                                        <rect key="frame" x="255" y="10" width="30" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <state key="normal" title="×">
+                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closeBtnDidTap:" destination="1Y5-wR-TcZ" eventType="touchUpInside" id="okx-6H-56J"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOr-0o-pBc">
+                                        <rect key="frame" x="10" y="360" width="68" height="40"/>
+                                        <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Eks-Yp-1Nt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="닫기">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closeBtnDidTap:" destination="1Y5-wR-TcZ" eventType="touchUpInside" id="T1h-7s-iI9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqC-V5-h8G">
+                                        <rect key="frame" x="83" y="360" width="202" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="bEH-0G-5KO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="자세히 보기">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="mTA-OC-iY6" firstAttribute="top" secondItem="z91-iY-gz5" secondAttribute="top" id="1tB-p3-cBh"/>
+                                    <constraint firstItem="mTA-OC-iY6" firstAttribute="leading" secondItem="z91-iY-gz5" secondAttribute="leading" id="5rG-zI-r7l"/>
+                                    <constraint firstAttribute="trailing" secondItem="vTe-Sp-kjx" secondAttribute="trailing" constant="10" id="HUY-Np-xlZ"/>
+                                    <constraint firstItem="YOr-0o-pBc" firstAttribute="leading" secondItem="z91-iY-gz5" secondAttribute="leading" constant="10" id="OkT-SX-R15"/>
+                                    <constraint firstItem="vTe-Sp-kjx" firstAttribute="top" secondItem="z91-iY-gz5" secondAttribute="top" constant="10" id="PPU-tX-vEz"/>
+                                    <constraint firstItem="gqC-V5-h8G" firstAttribute="top" secondItem="mTA-OC-iY6" secondAttribute="bottom" constant="10" id="Pnh-tl-XR9"/>
+                                    <constraint firstAttribute="bottom" secondItem="YOr-0o-pBc" secondAttribute="bottom" constant="10" id="U4e-rf-MoS"/>
+                                    <constraint firstItem="YOr-0o-pBc" firstAttribute="top" secondItem="mTA-OC-iY6" secondAttribute="bottom" constant="10" id="VfS-qh-PJL"/>
+                                    <constraint firstAttribute="bottom" secondItem="gqC-V5-h8G" secondAttribute="bottom" constant="10" id="XOW-nx-Iez"/>
+                                    <constraint firstAttribute="trailing" secondItem="gqC-V5-h8G" secondAttribute="trailing" constant="10" id="eqV-k2-PZ7"/>
+                                    <constraint firstItem="gqC-V5-h8G" firstAttribute="leading" secondItem="YOr-0o-pBc" secondAttribute="trailing" constant="5" id="r8O-xu-n0x"/>
+                                    <constraint firstAttribute="trailing" secondItem="mTA-OC-iY6" secondAttribute="trailing" id="ygH-ZI-eCy"/>
+                                    <constraint firstItem="YOr-0o-pBc" firstAttribute="width" secondItem="gqC-V5-h8G" secondAttribute="width" multiplier="1:3" id="zWQ-9y-JMj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.24708997483221476" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="z91-iY-gz5" firstAttribute="centerY" secondItem="zc4-EB-M2p" secondAttribute="centerY" id="Jhx-Cr-2rv"/>
+                            <constraint firstItem="dtl-zG-7qp" firstAttribute="trailing" secondItem="z91-iY-gz5" secondAttribute="trailing" constant="40" id="XJK-0t-aiY"/>
+                            <constraint firstItem="z91-iY-gz5" firstAttribute="leading" secondItem="dtl-zG-7qp" secondAttribute="leading" constant="40" id="o6I-3I-7kY"/>
+                            <constraint firstItem="z91-iY-gz5" firstAttribute="centerX" secondItem="zc4-EB-M2p" secondAttribute="centerX" id="rgM-cZ-zmK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dtl-zG-7qp"/>
+                    </view>
+                    <connections>
+                        <outlet property="popupCenterY" destination="Jhx-Cr-2rv" id="RqB-Bd-c7K"/>
+                        <outlet property="popupImageHeight" destination="oWK-AK-FVN" id="6Zt-8C-Ldh"/>
+                        <outlet property="popupImageView" destination="mTA-OC-iY6" id="QTQ-S5-9xW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9g2-rQ-HDf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="205.59999999999999" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="test.jpg" width="1275" height="1133"/>
+    </resources>
+</document>
