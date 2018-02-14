@@ -20,23 +20,26 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meBubble.png" translatesAutoresizingMaskIntoConstraints="NO" id="QZT-G8-tFN">
-                        <rect key="frame" x="121.5" y="5" width="204.5" height="61.5"/>
+                        <rect key="frame" x="96" y="5" width="230" height="61.5"/>
                         <rect key="contentStretch" x="0.5" y="0.5" width="0.0" height="0.0"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjZ-sH-6HS">
-                        <rect key="frame" x="126.5" y="10" width="186.5" height="51.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjZ-sH-6HS">
+                        <rect key="frame" x="101" y="10" width="212" height="51.5"/>
+                        <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae nulla purus. Sed eget facilisis lectus. Aenean laoreet a libero sit amet imperdiet. Etiam sed ex egestas, rutrum nisl in</string>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오후 10시" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x7C-fP-dhf">
-                        <rect key="frame" x="77" y="55" width="36.5" height="11"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <rect key="frame" x="40" y="51.5" width="48" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 <constraints>
+                    <constraint firstItem="x7C-fP-dhf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="0Eg-xH-gEt"/>
                     <constraint firstItem="QZT-G8-tFN" firstAttribute="bottom" secondItem="x7C-fP-dhf" secondAttribute="bottom" id="9Al-Lg-C7g"/>
                     <constraint firstItem="cjZ-sH-6HS" firstAttribute="leading" secondItem="x7C-fP-dhf" secondAttribute="trailing" constant="13" id="HNI-Ak-8aD"/>
                     <constraint firstAttribute="trailing" secondItem="QZT-G8-tFN" secondAttribute="trailing" constant="10" id="IW1-nz-dJE"/>

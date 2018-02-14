@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     
     chatTableView.register(UINib(nibName: "MyBubbleCell", bundle: nil), forCellReuseIdentifier: "MyBubbleCell")
+    chatTableView.register(UINib(nibName: "YourBubbleCell", bundle: nil), forCellReuseIdentifier: "YourBubbleCell")
     chatTableView.delegate = self
     chatTableView.dataSource = self
     chatTableView.rowHeight = UITableViewAutomaticDimension
@@ -35,7 +36,13 @@ extension ViewController: UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
-    let cell = tableView.dequeueReusableCell(withIdentifier: "MyBubbleCell", for: indexPath) as! MyBubbleCell
+    var cell: UITableViewCell
+    
+    if indexPath.row % 2 == 0 {
+      cell = tableView.dequeueReusableCell(withIdentifier: "MyBubbleCell", for: indexPath) as! MyBubbleCell
+    } else {
+      cell = tableView.dequeueReusableCell(withIdentifier: "YourBubbleCell", for: indexPath) as! YourBubbleCell
+    }
     
     return cell
   }

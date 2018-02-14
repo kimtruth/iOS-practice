@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YourBubbleCell" rowHeight="126" id="KGk-i7-Jjw" customClass="YourBubbleCell" customModule="chat" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="439" height="126"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="439" height="125.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="youBubble.png" translatesAutoresizingMaskIntoConstraints="NO" id="L29-Rh-5c3">
+                        <rect key="frame" x="53" y="29.5" width="282" height="91"/>
+                        <rect key="contentStretch" x="0.5" y="0.5" width="0.0" height="0.0"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오후 10시" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnE-mW-g5X">
+                        <rect key="frame" x="348" y="106" width="48" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_person_no1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Y09-5m-LZH">
+                        <rect key="frame" x="10" y="10" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="4lF-Ck-FN6"/>
+                            <constraint firstAttribute="width" constant="35" id="FOt-uG-bXq"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYh-6O-Tq9">
+                        <rect key="frame" x="58" y="8.5" width="38" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rVF-OU-sLU">
+                        <rect key="frame" x="66" y="34.5" width="264" height="81"/>
+                        <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae nulla purus. Sed eget facilisis lectus. Aenean laoreet a libero sit amet imperdiet. Etiam sed ex egestas, rutrum nisl in</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="bnE-mW-g5X" firstAttribute="bottom" secondItem="L29-Rh-5c3" secondAttribute="bottom" id="1Ca-Bq-Aju"/>
+                    <constraint firstItem="eYh-6O-Tq9" firstAttribute="leading" secondItem="Y09-5m-LZH" secondAttribute="trailing" constant="13" id="2hh-py-QyS"/>
+                    <constraint firstAttribute="bottom" secondItem="L29-Rh-5c3" secondAttribute="bottom" constant="5" id="ACM-mb-A11"/>
+                    <constraint firstItem="Y09-5m-LZH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="GVq-ZF-021"/>
+                    <constraint firstItem="L29-Rh-5c3" firstAttribute="top" secondItem="eYh-6O-Tq9" secondAttribute="bottom" constant="4" id="H9b-Wq-Ovg"/>
+                    <constraint firstItem="bnE-mW-g5X" firstAttribute="leading" secondItem="L29-Rh-5c3" secondAttribute="trailing" constant="13" id="J7k-c5-lbh"/>
+                    <constraint firstItem="rVF-OU-sLU" firstAttribute="trailing" secondItem="L29-Rh-5c3" secondAttribute="trailing" constant="-5" id="JLg-ty-c2d"/>
+                    <constraint firstItem="rVF-OU-sLU" firstAttribute="top" secondItem="L29-Rh-5c3" secondAttribute="top" constant="5" id="Tj7-0o-fBd"/>
+                    <constraint firstItem="Y09-5m-LZH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Yr0-pY-RgK"/>
+                    <constraint firstItem="L29-Rh-5c3" firstAttribute="leading" secondItem="Y09-5m-LZH" secondAttribute="trailing" constant="8" id="fgA-Yp-9nn"/>
+                    <constraint firstItem="L29-Rh-5c3" firstAttribute="top" secondItem="Y09-5m-LZH" secondAttribute="centerY" constant="2" id="glb-AS-jUk"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bnE-mW-g5X" secondAttribute="trailing" constant="40" id="oD8-sP-qSO"/>
+                    <constraint firstItem="rVF-OU-sLU" firstAttribute="leading" secondItem="L29-Rh-5c3" secondAttribute="leading" constant="13" id="qqO-nn-E2m"/>
+                    <constraint firstItem="rVF-OU-sLU" firstAttribute="bottom" secondItem="L29-Rh-5c3" secondAttribute="bottom" constant="-5" id="xwL-Nk-dJu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="profileImage" destination="Y09-5m-LZH" id="1tU-zH-a07"/>
+            </connections>
+            <point key="canvasLocation" x="80.5" y="95"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="img_person_no1.png" width="110" height="110"/>
+        <image name="youBubble.png" width="42" height="32"/>
+    </resources>
+</document>

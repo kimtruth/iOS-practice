@@ -20,6 +20,10 @@
 		98E608E320345BED00E7B138 /* img_person_no2.png in Resources */ = {isa = PBXBuildFile; fileRef = 98E608DF20345BEC00E7B138 /* img_person_no2.png */; };
 		98E608E420345BED00E7B138 /* img_person_no1.png in Resources */ = {isa = PBXBuildFile; fileRef = 98E608E020345BEC00E7B138 /* img_person_no1.png */; };
 		98E608E520345BED00E7B138 /* img_person_no1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98E608E120345BEC00E7B138 /* img_person_no1@2x.png */; };
+		98E608E8203463B500E7B138 /* youBubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 98E608E6203463B500E7B138 /* youBubble.png */; };
+		98E608E9203463B500E7B138 /* youBubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98E608E7203463B500E7B138 /* youBubble@2x.png */; };
+		98E608EC203463D000E7B138 /* YourBubbleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E608EA203463D000E7B138 /* YourBubbleCell.swift */; };
+		98E608ED203463D000E7B138 /* YourBubbleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98E608EB203463D000E7B138 /* YourBubbleCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		98E608DF20345BEC00E7B138 /* img_person_no2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_person_no2.png; sourceTree = "<group>"; };
 		98E608E020345BEC00E7B138 /* img_person_no1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_person_no1.png; sourceTree = "<group>"; };
 		98E608E120345BEC00E7B138 /* img_person_no1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_person_no1@2x.png"; sourceTree = "<group>"; };
+		98E608E6203463B500E7B138 /* youBubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youBubble.png; sourceTree = "<group>"; };
+		98E608E7203463B500E7B138 /* youBubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "youBubble@2x.png"; sourceTree = "<group>"; };
+		98E608EA203463D000E7B138 /* YourBubbleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourBubbleCell.swift; sourceTree = "<group>"; };
+		98E608EB203463D000E7B138 /* YourBubbleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YourBubbleCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,8 @@
 				98E608C52034596500E7B138 /* ViewController.swift */,
 				98E608D5203459FD00E7B138 /* MyBubbleCell.swift */,
 				98E608D6203459FD00E7B138 /* MyBubbleCell.xib */,
+				98E608EA203463D000E7B138 /* YourBubbleCell.swift */,
+				98E608EB203463D000E7B138 /* YourBubbleCell.xib */,
 				98E608C72034596500E7B138 /* Main.storyboard */,
 				98E608D920345A4B00E7B138 /* images */,
 				98E608CA2034596500E7B138 /* Assets.xcassets */,
@@ -88,6 +98,8 @@
 			children = (
 				98E608DA20345A6A00E7B138 /* meBubble.png */,
 				98E608DB20345A6A00E7B138 /* meBubble@2x.png */,
+				98E608E6203463B500E7B138 /* youBubble.png */,
+				98E608E7203463B500E7B138 /* youBubble@2x.png */,
 				98E608E020345BEC00E7B138 /* img_person_no1.png */,
 				98E608E120345BEC00E7B138 /* img_person_no1@2x.png */,
 				98E608DF20345BEC00E7B138 /* img_person_no2.png */,
@@ -161,9 +173,12 @@
 				98E608CE2034596500E7B138 /* LaunchScreen.storyboard in Resources */,
 				98E608CB2034596500E7B138 /* Assets.xcassets in Resources */,
 				98E608C92034596500E7B138 /* Main.storyboard in Resources */,
+				98E608E9203463B500E7B138 /* youBubble@2x.png in Resources */,
+				98E608E8203463B500E7B138 /* youBubble.png in Resources */,
 				98E608E220345BED00E7B138 /* img_person_no2@2x.png in Resources */,
 				98E608DD20345A6A00E7B138 /* meBubble@2x.png in Resources */,
 				98E608E320345BED00E7B138 /* img_person_no2.png in Resources */,
+				98E608ED203463D000E7B138 /* YourBubbleCell.xib in Resources */,
 				98E608D8203459FD00E7B138 /* MyBubbleCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,6 +192,7 @@
 			files = (
 				98E608D7203459FD00E7B138 /* MyBubbleCell.swift in Sources */,
 				98E608C62034596500E7B138 /* ViewController.swift in Sources */,
+				98E608EC203463D000E7B138 /* YourBubbleCell.swift in Sources */,
 				98E608C42034596500E7B138 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
