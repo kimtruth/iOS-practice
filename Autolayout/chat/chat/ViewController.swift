@@ -12,11 +12,14 @@ class ViewController: UIViewController {
   @IBOutlet weak var inputTextView: UITextView!
   @IBOutlet weak var chatTableView: UITableView!
   @IBOutlet weak var inputViewBottomMargin: NSLayoutConstraint!
+  @IBOutlet weak var inputViewHeight: NSLayoutConstraint!
   
   var chatData = ["hi", "hello"]
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    inputTextView.delegate = self
     
     chatTableView.register(UINib(nibName: "MyBubbleCell", bundle: nil), forCellReuseIdentifier: "MyBubbleCell")
     chatTableView.register(UINib(nibName: "YourBubbleCell", bundle: nil), forCellReuseIdentifier: "YourBubbleCell")
@@ -68,6 +71,19 @@ class ViewController: UIViewController {
       let lastIndexPath = IndexPath(row: chatData.count - 1, section: 0)
       self.chatTableView.scrollToRow(at: lastIndexPath, at: .bottom, animated: false)
       inputTextView.text = ""
+      self.textViewDidChange(inputTextView)
+    }
+  }
+}
+
+extension ViewController: UITextViewDelegate {
+  
+  func textViewDidChange(_ textView: UITextView) {
+    let height = textView.contentSize.height
+    if height <= 83 {
+      inputViewHeight.constant = height
+      self.view.layoutIfNeeded()
+      textView.setContentOffset(.zero, animated: false)
     }
   }
 }

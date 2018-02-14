@@ -19,14 +19,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rBO-b2-jRi">
-                                <rect key="frame" x="0.0" y="64" width="375" height="558"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="560"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="25Z-Ua-fz6" userLabel="Text Input View">
-                                <rect key="frame" x="0.0" y="622" width="375" height="45"/>
+                                <rect key="frame" x="0.0" y="624" width="375" height="43"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Act-JY-xKf">
-                                        <rect key="frame" x="319" y="5" width="46" height="35"/>
+                                        <rect key="frame" x="319" y="5" width="46" height="33"/>
                                         <color key="backgroundColor" red="0.97647058823529409" green="0.94901960784313721" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                         <state key="normal" title="전송">
@@ -37,16 +37,16 @@
                                         </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9G8-v2-64i">
-                                        <rect key="frame" x="50" y="5" width="259" height="35"/>
+                                        <rect key="frame" x="50" y="5" width="259" height="33"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="35" id="H6E-mL-1xC"/>
+                                            <constraint firstAttribute="height" constant="33" id="H6E-mL-1xC"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQG-Ri-hm8">
-                                        <rect key="frame" x="10" y="5" width="30" height="35"/>
+                                        <rect key="frame" x="10" y="5" width="30" height="33"/>
                                         <state key="normal" title="+">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -87,6 +87,7 @@
                         <outlet property="chatTableView" destination="rBO-b2-jRi" id="09D-iP-ozc"/>
                         <outlet property="inputTextView" destination="9G8-v2-64i" id="uGf-T2-w2p"/>
                         <outlet property="inputViewBottomMargin" destination="uVI-GH-IaZ" id="jm7-RU-yfn"/>
+                        <outlet property="inputViewHeight" destination="H6E-mL-1xC" id="PFU-uv-qVr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
