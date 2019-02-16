@@ -16,6 +16,7 @@
 		98972A61221694D200BC5A3F /* EmployeeDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98972A60221694D200BC5A3F /* EmployeeDAO.swift */; };
 		98972A652216A68B00BC5A3F /* hr.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 98972A642216A68B00BC5A3F /* hr.sqlite */; };
 		98972A682216A76E00BC5A3F /* SubtitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98972A672216A76E00BC5A3F /* SubtitleCell.swift */; };
+		98972A6A2217CDD100BC5A3F /* DepartPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98972A692217CDD100BC5A3F /* DepartPickerController.swift */; };
 		EB811F17D18EE8B0BC53FE69 /* Pods_HRapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A59BD102AFA65E5EE6CB9DA /* Pods_HRapp.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		98972A60221694D200BC5A3F /* EmployeeDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDAO.swift; sourceTree = "<group>"; };
 		98972A642216A68B00BC5A3F /* hr.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = hr.sqlite; sourceTree = "<group>"; };
 		98972A672216A76E00BC5A3F /* SubtitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleCell.swift; sourceTree = "<group>"; };
+		98972A692217CDD100BC5A3F /* DepartPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartPickerController.swift; sourceTree = "<group>"; };
 		CDD035AB70FBB32C02981ACD /* Pods-HRapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HRapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-HRapp/Pods-HRapp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +104,7 @@
 			children = (
 				98972A522216894700BC5A3F /* DepartController.swift */,
 				98972A562216896700BC5A3F /* EmployeeController.swift */,
+				98972A692217CDD100BC5A3F /* DepartPickerController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			files = (
 				98972A572216896700BC5A3F /* EmployeeController.swift in Sources */,
 				98972A3D2216865A00BC5A3F /* AppDelegate.swift in Sources */,
+				98972A6A2217CDD100BC5A3F /* DepartPickerController.swift in Sources */,
 				98972A61221694D200BC5A3F /* EmployeeDAO.swift in Sources */,
 				98972A682216A76E00BC5A3F /* SubtitleCell.swift in Sources */,
 				98972A5F22168CBA00BC5A3F /* DepartmentDAO.swift in Sources */,

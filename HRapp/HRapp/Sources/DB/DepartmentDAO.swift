@@ -114,7 +114,7 @@ class DepartMentDAO {
     }
   }
   
-  func remote(departCd: Int) -> Bool {
+  func remove(departCd: Int) -> Bool {
     do {
       let sql = "DELETE FROM department WHERE depart_cd = ?"
       try self.fmdb.executeUpdate(sql, values: [departCd])

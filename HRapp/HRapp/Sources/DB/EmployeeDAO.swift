@@ -76,17 +76,22 @@ class EmployeeDAO {
   
   // MARK: Functions
   
-  func find() -> [EmployeeVO] {
+  func find(departCd: Int? = nil) -> [EmployeeVO] {
     var employeeList = [EmployeeVO]()
+    var condition: String?
     
-    do {
-      let sql = """
+    if let departCd = departCd {
+      condition = "WHERE Employee.depart_cd = \(departCd)"
+    }
+    
+    let sql = """
         SELECT emp_cd, emp_name, join_date, state_cd, department.depart_title
         FROM employee
         JOIN department On department.depart_cd = employee.depart_cd
         ORDER BY employee.depart_cd ASC
+        \(condition ?? "")
       """
-      
+    do {
       let rs = try self.fmdb.executeQuery(sql, values: nil)
       
       while rs.next() {
@@ -146,7 +151,7 @@ class EmployeeDAO {
       params.append(param.stateCd.rawValue)
       params.append(param.departCd)
       
-      try self.fmdb.executeQuery(sql, values: params)
+      try self.fmdb.executeUpdate(sql, values: params)
       
       return true
     } catch let error {

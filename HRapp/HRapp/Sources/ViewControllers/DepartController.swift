@@ -107,4 +107,18 @@ class DepartController: UITableViewController {
     
     return cell
   }
+  
+  override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+    let depart = self.departList[indexPath.row]
+    
+    
+    if self.departDAO.remove(departCd: depart.departCd) {
+      self.departList.remove(at: indexPath.row)
+      tableView.deleteRows(at: [indexPath], with: .fade)
+    }
+  }
+  
+  override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+    return .delete
+  }
 }
